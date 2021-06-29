@@ -21,19 +21,17 @@ public class Exer_19_11 {
         for (int i = 0; i < m.length; i++) System.out.println(m[i] + " ");
     }
 
-    public static boolean hasAllDigitsSame (int i)
-    {
-        int a = i ;
-        int m = a % 10 ;
-        int mm = m ;
-        while(a > 0)
-        {
+    public static boolean hasAllDigitsSame(int i) {
+        int a = i;
+        int m = a % 10;
+        int mm = m;
+        while (a > 0) {
             m = a % 10;
             if (m != mm)
-                return false ;
-            a /= 10 ;
+                return false;
+            a /= 10;
         }
-        return true ;
+        return true;
     }
 
     public static void main(String[] args) {
